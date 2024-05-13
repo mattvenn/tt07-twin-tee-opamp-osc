@@ -10,6 +10,9 @@ You can also include images in this folder and reference them in the markdown. E
 ## How it works
 
 https://www.youtube.com/watch?v=KFVVozlXoOk
+https://www.electronics-tutorials.ws/oscillator/twin-t-oscillator.html
+
+f = 1 / 2 * pi * RC
 
 ## How to test
 

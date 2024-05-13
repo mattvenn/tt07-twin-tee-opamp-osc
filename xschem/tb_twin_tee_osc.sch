@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 50 -440 850 -40 {flags=graph
-y1=1.7e-05
-y2=2
+y1=0.028
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-11.30103
-x2=-4.8239087
+x1=-5.153175
+x2=-5.1399153
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -55,11 +55,11 @@ spice_ignore=false}
 C {devices/code.sym} -540 -440 0 0 {name=SIMULATION
 only_toplevel=false 
 value="
-.option reltol=1e-5
+.option  METHOD = GEAR
 .param mc_mm_switch=0
-.ic v(twin_out)=0.8
+*.ic v(twin_out)=0.8
 .control
-  tran 500p 15u uic
+  tran 500p 10u uic
   write tb_twin_tee_osc.raw  
   set appendwrite 
 
