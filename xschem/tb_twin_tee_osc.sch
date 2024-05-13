@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-5.153175
-x2=-5.1399153
+x1=-11.30103
+x2=-5
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -81,7 +81,7 @@ C {devices/lab_pin.sym} -360 -230 0 1 {name=p2 sig_type=std_logic lab=vdd
 C {devices/lab_pin.sym} -260 -250 0 1 {name=p6 sig_type=std_logic lab=twin_out
 }
 C {twin_tee_osc.sym} -560 -230 0 0 {name=x1}
-C {devices/launcher.sym} 110 50 0 0 {name=h5
+C {devices/launcher.sym} 100 50 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_twin_tee_osc.raw tran"
 }
