@@ -13,20 +13,22 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-11.30103
-x2=-5
+x1=1.5098322e-06
+x2=1.6707601e-06
 divx=5
-subdivx=8
+subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=-1
+
 unitx=1
-logx=1
+logx=0
 logy=0
 color=4
-node=twin_out}
+node=twin_out
+rainbow=1
+dataset=-1}
 N -730 -440 -730 -430 {
 lab=vss}
 N -620 -440 -620 -430 {
@@ -46,24 +48,27 @@ only_toplevel=true
 format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
-.include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt_mm
+*.include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 
 
 "
 spice_ignore=false}
-C {devices/code.sym} -540 -440 0 0 {name=SIMULATION
+C {devices/code.sym} -540 -450 0 0 {name=SIMULATION
 only_toplevel=false 
 value="
-.option  METHOD = GEAR
-.param mc_mm_switch=0
+*.option  METHOD = GEAR
+*.param mc_mm_switch=0
 *.ic v(twin_out)=0.8
 .control
-  tran 500p 10u uic
+repeat 5
+
+  tran 500p 2u uic
   write tb_twin_tee_osc.raw  
   set appendwrite 
+  reset
 
-
+end
 .endc
 "}
 C {devices/vsource.sym} -620 -400 0 0 {name=V1 value=1.8 savecurrent=false}

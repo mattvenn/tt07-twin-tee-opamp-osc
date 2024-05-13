@@ -62,7 +62,7 @@ mult=1}
 C {sky130_fd_pr/cap_mim_m3_1.sym} -210 70 1 0 {name=C3 model=cap_mim_m3_1 W=15 L=15 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 110 70 1 0 {name=C4 model=cap_mim_m3_1 W=15 L=15 MF=1 spiceprefix=X}
 C {sky130_fd_pr/res_high_po_0p35.sym} -40 170 2 0 {name=R6
-L=4.95
+L=4.9
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
