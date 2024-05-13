@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 50 -440 850 -40 {flags=graph
-y1=0.2
-y2=1.7
+y1=0.054
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.3415823e-06
-x2=1.4119507e-06
+x1=7.9407468e-07
+x2=1.0315686e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -30,15 +30,15 @@ node=twin_out
 rainbow=1
 dataset=-1}
 B 2 50 -880 850 -480 {flags=graph
-y1=0.00015
-y2=0.00035
+y1=0.00021
+y2=0.00027
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.3415823e-06
-x2=1.4119507e-06
+x1=7.9407468e-07
+x2=1.0315686e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -88,10 +88,10 @@ C {devices/code.sym} -540 -450 0 0 {name=SIMULATION
 only_toplevel=false 
 value="
 *.option  METHOD = GEAR
-*.param mc_mm_switch=0
+.param mc_mm_switch=0
 *.ic v(twin_out)=0.8
 .control
-repeat 5
+repeat 1
 
   tran 500p 2u uic
   write tb_twin_tee_osc.raw  
@@ -100,6 +100,7 @@ repeat 5
 
 end
 .endc
+
 "}
 C {devices/vsource.sym} -620 -400 0 0 {name=V1 value=1.8 savecurrent=false}
 C {devices/gnd.sym} -620 -360 0 0 {name=l2 lab=GND}

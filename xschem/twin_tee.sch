@@ -56,17 +56,17 @@ L=40
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 20 -120 0 0 {name=C1 model=cap_mim_m3_1 W=15 L=15 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -140 -120 0 0 {name=C2 model=cap_mim_m3_1 W=15 L=15 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 20 -120 0 0 {name=C1 model=cap_mim_m3_1 W=15 L=10 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -140 -120 0 0 {name=C2 model=cap_mim_m3_1 W=15 L=10 MF=1 spiceprefix=X}
 C {sky130_fd_pr/res_high_po_0p35.sym} -260 -150 1 0 {name=R5
 L=40
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -210 70 1 0 {name=C3 model=cap_mim_m3_1 W=15 L=15 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 110 70 1 0 {name=C4 model=cap_mim_m3_1 W=15 L=15 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -210 70 1 0 {name=C3 model=cap_mim_m3_1 W=15 L=10 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 110 70 1 0 {name=C4 model=cap_mim_m3_1 W=15 L=10 MF=1 spiceprefix=X}
 C {sky130_fd_pr/res_high_po_0p35.sym} -40 170 2 0 {name=R6
-L=20
+L=19
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}

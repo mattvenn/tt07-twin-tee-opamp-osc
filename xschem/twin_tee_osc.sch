@@ -53,7 +53,9 @@ N -30 120 100 120 {
 lab=#net1}
 N 100 180 350 180 {
 lab=out}
-N 350 180 360 -30 {
+N 360 -30 360 180 {
+lab=out}
+N 350 180 360 180 {
 lab=out}
 C {p3_opamp.sym} 140 -20 2 1 {name=x1}
 C {devices/lab_pin.sym} 170 -140 2 1 {name=p1 sig_type=std_logic lab=vss
