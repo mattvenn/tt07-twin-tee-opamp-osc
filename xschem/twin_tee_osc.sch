@@ -78,20 +78,15 @@ C {devices/lab_pin.sym} -180 -130 0 1 {name=p5 sig_type=std_logic lab=vss
 C {devices/iopin.sym} -380 40 0 0 {name=p12 lab=vdd}
 C {devices/iopin.sym} -380 70 0 0 {name=p7 lab=vss}
 C {devices/iopin.sym} 400 -30 0 0 {name=p10 lab=out}
-C {sky130_fd_pr/res_high_po_0p35.sym} 100 150 0 0 {name=R2
-L=500
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
 C {devices/lab_pin.sym} 80 150 2 1 {name=p11 sig_type=std_logic lab=vss
 }
 C {sky130_fd_pr/res_high_po_0p35.sym} -160 160 0 0 {name=R4
-L=10
+L=20
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_high_po_0p35.sym} -160 70 0 0 {name=R1
-L=10
+L=20
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}

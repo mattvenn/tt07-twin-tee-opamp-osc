@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 1350 -420 2150 -20 {flags=graph
-y1=0.98581244
-y2=1.0177026
+y1=0.33397598
+y2=1.6022851
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.9447916e-07
-x2=5.6044985e-07
+x1=3.3163731e-07
+x2=6.5841584e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -47,7 +47,7 @@ C {devices/title.sym} 160 -30 0 0 {name=l1 author="Sai"}
 C {devices/vsource.sym} 50 -360 0 0 {name=V1 value=1.8 savecurrent=false}
 C {devices/lab_pin.sym} 50 -390 0 0 {name=p8 lab=VDD  net_name=true}
 C {devices/gnd.sym} 50 -330 0 0 {name=l2 lab=GND}
-C {devices/vsource.sym} 140 -360 0 0 {name=V2 value="sin(1 10m 40e6 0)" savecurrent=false}
+C {devices/vsource.sym} 140 -360 0 0 {name=V2 value="sin(0.9 0.4 5e6 0)" savecurrent=false}
 C {devices/gnd.sym} 140 -330 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 140 -390 0 0 {name=p3 lab=VIN  net_name=true}
 C {devices/launcher.sym} 980 -500 0 0 {name=h5

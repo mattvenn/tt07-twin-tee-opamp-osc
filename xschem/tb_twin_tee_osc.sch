@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 50 -440 850 -40 {flags=graph
-y1=0.054
-y2=1.8
+y1=-0.33402471
+y2=2.1802152
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=7.9407468e-07
-x2=1.0315686e-06
+x1=3.5395418e-06
+x2=4.8706722e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -30,15 +30,15 @@ node=twin_out
 rainbow=1
 dataset=-1}
 B 2 50 -880 850 -480 {flags=graph
-y1=0.00021
-y2=0.00027
+y1=0.0001022284
+y2=0.0002515276
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=7.9407468e-07
-x2=1.0315686e-06
+x1=3.5395418e-06
+x2=4.8706722e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -88,12 +88,12 @@ C {devices/code.sym} -540 -450 0 0 {name=SIMULATION
 only_toplevel=false 
 value="
 *.option  METHOD = GEAR
-.param mc_mm_switch=0
+*.param mc_mm_switch=0
 *.ic v(twin_out)=0.8
 .control
-repeat 1
+repeat 5
 
-  tran 500p 2u uic
+  tran 500p 5u uic
   write tb_twin_tee_osc.raw  
   set appendwrite 
   reset
