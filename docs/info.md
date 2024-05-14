@@ -17,11 +17,11 @@ https://www.electronics-tutorials.ws/oscillator/twin-t-oscillator.html
 
 ### Notch filter AC analysis
 
-![Notch](notch_ac.png)
+![Notch filter AC analysis](notch_ac.png)
 
 ### Opamp AC analysis
 
-![Opamp](p3_opamp_ac.png)
+![Opamp AC analysis](p3_opamp_ac.png)
 
 ### Transient analysis
 
@@ -30,7 +30,7 @@ as the resistance and transistors change across process corners. Each run is sho
 in the Twin Tee filter is too high, the oscillations quickly die out, so it's deliberately undersized at the expense of
 distortion in the sine wave.
 
-![Twin Trans](twin_trans.png)
+![Twin Tee output transient analysis](twin_trans.png)
 
 ## Acknowledgements
 
