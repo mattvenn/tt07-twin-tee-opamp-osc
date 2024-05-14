@@ -16,7 +16,7 @@ f = 1 / 2 * pi * RC
 
 ## How to test
 
-Explain how to use your project
+After the project is enabled, you should see a sine wave at around 6.3MHz on analog output pin 0.
 
 ## External hardware
 
