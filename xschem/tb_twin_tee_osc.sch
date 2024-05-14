@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.5395418e-06
-x2=4.8706722e-06
+x1=4.1003274e-06
+x2=4.4492752e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -37,8 +37,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.5395418e-06
-x2=4.8706722e-06
+x1=4.1003274e-06
+x2=4.4492752e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -76,7 +76,7 @@ only_toplevel=true
 format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt_mm
 *.include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 
 
@@ -86,7 +86,7 @@ C {devices/code.sym} -540 -450 0 0 {name=SIMULATION
 only_toplevel=false 
 value="
 *.option  METHOD = GEAR
-.param mc_mm_switch=0
+*.param mc_mm_switch=0
 *.ic v(twin_out)=0.8
 .control
 repeat 5
