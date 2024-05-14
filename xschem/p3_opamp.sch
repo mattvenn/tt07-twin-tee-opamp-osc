@@ -160,7 +160,7 @@ C {devices/lab_pin.sym} 1220 -510 2 0 {name=p24 sig_type=std_logic lab=VOUT}
 C {devices/lab_pin.sym} 1100 -330 1 0 {name=p1 sig_type=std_logic lab=VBIAS}
 C {devices/lab_pin.sym} 990 -560 2 0 {name=p14 sig_type=std_logic lab=V1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 410 -670 0 0 {name=R1
-L=2.8
+L=2.9
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}

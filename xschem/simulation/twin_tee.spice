@@ -1,0 +1,12 @@
+** sch_path: /home/matt/work/asic-workshop/shuttle-2404/tt07-twin-tee-opamp-osc/xschem/twin_tee.sch
+.subckt twin_tee vss out in
+*.PININFO vss:B in:B out:B
+XR5 c1_c2 out vss sky130_fd_pr__res_high_po_0p35 L=50 mult=1 m=1
+XC1 vss c1_c2 sky130_fd_pr__cap_mim_m3_1 W=15 L=15 m=1
+XC2 vss c1_c2 sky130_fd_pr__cap_mim_m3_1 W=15 L=15 m=1
+XR4 in c1_c2 vss sky130_fd_pr__res_high_po_0p35 L=50 mult=1 m=1
+XC3 in c3_c4 sky130_fd_pr__cap_mim_m3_1 W=15 L=15 m=1
+XC4 c3_c4 out sky130_fd_pr__cap_mim_m3_1 W=15 L=15 m=1
+XR6 c3_c4 vss vss sky130_fd_pr__res_high_po_0p35 L=23 mult=1 m=1
+.ends
+.end

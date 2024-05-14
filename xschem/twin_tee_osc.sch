@@ -27,8 +27,6 @@ N -240 -90 -200 -90 {
 lab=#net2}
 N 360 -240 360 -30 {
 lab=out}
-N -240 -150 -180 -150 {
-lab=vdd}
 N -240 -130 -180 -130 {
 lab=vss}
 N 360 -30 400 -30 {
@@ -49,14 +47,6 @@ N -30 30 20 30 {
 lab=#net1}
 N -60 -90 -30 -90 {
 lab=#net2}
-N -30 120 100 120 {
-lab=#net1}
-N 100 180 350 180 {
-lab=out}
-N 360 -30 360 180 {
-lab=out}
-N 350 180 360 180 {
-lab=out}
 C {p3_opamp.sym} 140 -20 2 1 {name=x1}
 C {devices/lab_pin.sym} 170 -140 2 1 {name=p1 sig_type=std_logic lab=vss
 }
@@ -70,16 +60,12 @@ C {devices/lab_pin.sym} -200 160 2 1 {name=p8 sig_type=std_logic lab=vss
 }
 C {devices/lab_pin.sym} -200 70 2 1 {name=p9 sig_type=std_logic lab=vss
 }
-C {twin_tee.sym} -390 -120 0 0 {name=x2}
-C {devices/lab_pin.sym} -180 -150 0 1 {name=p3 sig_type=std_logic lab=vdd
-}
+C {twin_tee.sym} -390 -110 0 0 {name=x2}
 C {devices/lab_pin.sym} -180 -130 0 1 {name=p5 sig_type=std_logic lab=vss
 }
 C {devices/iopin.sym} -380 40 0 0 {name=p12 lab=vdd}
 C {devices/iopin.sym} -380 70 0 0 {name=p7 lab=vss}
 C {devices/iopin.sym} 400 -30 0 0 {name=p10 lab=out}
-C {devices/lab_pin.sym} 80 150 2 1 {name=p11 sig_type=std_logic lab=vss
-}
 C {sky130_fd_pr/res_high_po_0p35.sym} -160 160 0 0 {name=R4
 L=20
 model=res_high_po_0p35

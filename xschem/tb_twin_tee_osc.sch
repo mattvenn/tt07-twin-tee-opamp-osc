@@ -63,14 +63,12 @@ N -730 -370 -730 -360 {
 lab=GND}
 N -620 -370 -620 -360 {
 lab=GND}
-N -410 -230 -360 -230 {
+N -410 -230 -340 -230 {
 lab=#net1}
 N -410 -210 -360 -210 {
 lab=vss}
 N -410 -250 -260 -250 {
 lab=twin_out}
-N -360 -230 -340 -230 {
-lab=#net1}
 N -280 -230 -260 -230 {
 lab=vdd}
 C {devices/code.sym} -380 -440 0 0 {name=TT_MODELS
@@ -78,7 +76,7 @@ only_toplevel=true
 format="tcleval( @value )"
 value="
 ** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt_mm
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
 *.include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 
 
@@ -88,7 +86,7 @@ C {devices/code.sym} -540 -450 0 0 {name=SIMULATION
 only_toplevel=false 
 value="
 *.option  METHOD = GEAR
-*.param mc_mm_switch=0
+.param mc_mm_switch=0
 *.ic v(twin_out)=0.8
 .control
 repeat 5

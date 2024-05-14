@@ -59,8 +59,6 @@ N -850 -310 -850 -300 {
 lab=twin_in}
 N -850 -240 -850 -230 {
 lab=GND}
-N -410 -230 -360 -230 {
-lab=vdd}
 N -410 -210 -360 -210 {
 lab=vss}
 N -410 -170 -360 -170 {
@@ -107,10 +105,8 @@ C {devices/launcher.sym} 120 110 0 0 {name=h1
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/testbench.raw ac"
 }
-C {twin_tee.sym} -560 -200 0 0 {name=x1}
+C {twin_tee.sym} -560 -190 0 0 {name=x1}
 C {devices/lab_pin.sym} -360 -210 0 1 {name=p1 sig_type=std_logic lab=vss
-}
-C {devices/lab_pin.sym} -360 -230 0 1 {name=p2 sig_type=std_logic lab=vdd
 }
 C {devices/lab_pin.sym} -360 -170 0 1 {name=p4 sig_type=std_logic lab=twin_in
 }
