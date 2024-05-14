@@ -1,0 +1,41 @@
+** sch_path: /home/matt/work/asic-workshop/shuttle-2404/tt07-twin-tee-opamp-osc/xschem/twin_tee_osc.sch
+.subckt twin_tee_osc out vdd vss
+*.PININFO vdd:B vss:B out:B
+x1 vdd net2 net1 out vss p3_opamp
+x2 vss out net2 twin_tee
+XR4 vss net1 vss sky130_fd_pr__res_high_po_0p35 L=20 mult=1 m=1
+XR1 net1 vdd vss sky130_fd_pr__res_high_po_0p35 L=20 mult=1 m=1
+.ends
+
+* expanding   symbol:  p3_opamp.sym # of pins=5
+** sym_path: /home/matt/work/asic-workshop/shuttle-2404/tt07-twin-tee-opamp-osc/xschem/p3_opamp.sym
+** sch_path: /home/matt/work/asic-workshop/shuttle-2404/tt07-twin-tee-opamp-osc/xschem/p3_opamp.sch
+.subckt p3_opamp VDD MINUS PLUS VOUT VSS
+*.PININFO VDD:B VSS:B PLUS:B MINUS:B VOUT:B
+XM3 VX VBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=2 W=4 nf=4 m=1
+XM6 VBIAS VBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=2 W=4 nf=4 m=1
+XM7 VOUT VBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=2 W=7 nf=7 m=1
+XR1 VBIAS VDD VSS sky130_fd_pr__res_xhigh_po_0p35 L=2.9 mult=1 m=1
+XM2 V2 MINUS VX VSS sky130_fd_pr__nfet_01v8_lvt L=0.5 W=2.5 nf=1 m=1
+XM1 V1 PLUS VX VSS sky130_fd_pr__nfet_01v8_lvt L=0.5 W=2.5 nf=1 m=1
+XM4 V2 V2 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=6 m=1
+XM5 V1 V2 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=6 m=1
+XM8 VOUT V1 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.5 W=20 nf=20 m=1
+.ends
+
+
+* expanding   symbol:  twin_tee.sym # of pins=3
+** sym_path: /home/matt/work/asic-workshop/shuttle-2404/tt07-twin-tee-opamp-osc/xschem/twin_tee.sym
+** sch_path: /home/matt/work/asic-workshop/shuttle-2404/tt07-twin-tee-opamp-osc/xschem/twin_tee.sch
+.subckt twin_tee vss out in
+*.PININFO vss:B in:B out:B
+XR5 c1_c2 out vss sky130_fd_pr__res_high_po_0p35 L=50 mult=1 m=1
+XC1 vss c1_c2 sky130_fd_pr__cap_mim_m3_1 W=15 L=15 m=1
+XC2 vss c1_c2 sky130_fd_pr__cap_mim_m3_1 W=15 L=15 m=1
+XR4 in c1_c2 vss sky130_fd_pr__res_high_po_0p35 L=50 mult=1 m=1
+XC3 in c3_c4 sky130_fd_pr__cap_mim_m3_1 W=15 L=15 m=1
+XC4 c3_c4 out sky130_fd_pr__cap_mim_m3_1 W=15 L=15 m=1
+XR6 c3_c4 vss vss sky130_fd_pr__res_high_po_0p35 L=23 mult=1 m=1
+.ends
+
+.end
