@@ -1,8 +1,12 @@
-![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
+![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/lvs/badge.svg)
 
-# Tiny Tapeout Analog Project Template
+# Twin Tee Sine Wave Generator
+
+Generates a 6MHz sine wave with an opamp and a twin tee filter.
 
 - [Read the documentation for project](docs/info.md)
+- [3D Viewer](https://gds-viewer.tinytapeout.com/?model=https://mattvenn.github.io/tt07-twin-tee-opamp-osc/tinytapeout.gds.gltf)
+- [Open the schematic in your browser](https://xschem-viewer.com/?file=https://github.com/mattvenn/tt07-twin-tee-opamp-osc/blob/main/xschem/twin_tee_osc.sym)
 
 ## What is Tiny Tapeout?
 
