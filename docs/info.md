@@ -11,6 +11,8 @@ You can also include images in this folder and reference them in the markdown. E
 
 The circuit uses a "Twin Tee" filter along with an opamp to generate a sine wave.
 
+![Twin Tee Notch Filter](twin_tee_schematic.png)
+
 https://www.electronics-tutorials.ws/oscillator/twin-t-oscillator.html
 
     f = 1 / 2 * pi * RC
