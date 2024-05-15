@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 50 -440 850 -40 {flags=graph
-y1=0.55
-y2=1.3
+y1=0.00034
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.3597335e-06
-x2=4.77205e-06
+x1=-1.5684831e-07
+x2=2.4031491e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -25,20 +25,21 @@ ylabmag=1.0
 unitx=1
 logx=0
 logy=0
-color=4
-node=twin_out
+color="4 4"
+node="twin_out
+vdd"
 rainbow=1
 dataset=-1}
 B 2 50 -880 850 -480 {flags=graph
-y1=0.00012
-y2=0.00034
+y1=7.5e-05
+y2=0.0037
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.3597335e-06
-x2=4.77205e-06
+x1=-1.5684831e-07
+x2=2.4031491e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -56,15 +57,15 @@ dataset=-1
 color=4
 node=i(Vmeas)}
 B 2 60 120 860 520 {flags=graph
-y1=-0.0047
+y1=-0.0045
 y2=1.9
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.3597335e-06
-x2=4.77205e-06
+x1=-1.5684831e-07
+x2=2.4031491e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -138,11 +139,10 @@ only_toplevel=false
 value="
 *.option  METHOD = GEAR
 *.param mc_mm_switch=0
-*.ic v(twin_out)=0.8
 .control
 repeat 5
 
-  tran 500p 5u uic
+  tran 500p 10u uic
   write tb_twin_tee_osc.raw  
   set appendwrite 
   reset
@@ -151,7 +151,7 @@ end
 .endc
 
 "}
-C {devices/vsource.sym} -620 -400 0 0 {name=V1 value=1.8 savecurrent=false}
+C {devices/vsource.sym} -620 -400 0 0 {name=V1 value="pwl 0 0 0.1u 0 0.5u 1.8" savecurrent=false}
 C {devices/gnd.sym} -620 -360 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} -620 -440 2 1 {name=p5 sig_type=std_logic lab=vdd
 }
