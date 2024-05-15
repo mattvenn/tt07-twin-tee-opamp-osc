@@ -44,6 +44,9 @@ distortion in the sine wave.
 
 After the project is enabled, you should see a sine wave at around 6.3MHz on analog output pin 0.
 
+There is also a 20 bit digital counter connected to the oscillator output. The top 8 bits are connected to the LEDs.
+So you should also see the most significant bit flashing every ~6 seconds.
+
 ## External hardware
 
 Oscilloscope.
