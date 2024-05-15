@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Wed May 15 11:24:02 2024
+[*]
+[dumpfile] "/home/matt/work/asic-workshop/shuttle-2404/tt07-twin-tee-opamp-osc/verilog/test/osc_counter.vcd"
+[dumpfile_mtime] "Wed May 15 11:23:32 2024"
+[dumpfile_size] 191011
+[savefile] "/home/matt/work/asic-workshop/shuttle-2404/tt07-twin-tee-opamp-osc/verilog/test/osc_counter.gtkw"
+[timestart] 0
+[size] 2033 749
+[pos] -1 -1
+*-32.700001 41050000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 333
+[signals_width] 396
+[sst_expanded] 1
+[sst_vpaned_height] 208
+@28
+osc_counter.clk
+@22
+osc_counter.counter[19:0]
+osc_counter.count[7:0]
+@28
+osc_counter.n_rst
+@29
+osc_counter.rst
+[pattern_trace] 1
+[pattern_trace] 0
