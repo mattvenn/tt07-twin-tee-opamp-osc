@@ -34,6 +34,10 @@ distortion in the sine wave.
 
 ![Twin Tee output transient analysis](twin_trans.png)
 
+And this shows the supply ramping up from 0 and the oscillator starting.
+
+![Twin Tee startup](twin_trans_ramp.png)
+
 ## Acknowledgements
 
 * The [opamp design comes from Sai](https://github.com/argunda/tt06-tiny-opamp)
